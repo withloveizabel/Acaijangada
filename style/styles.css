@@ -1,0 +1,204 @@
+/*reset css*/
+:root {
+    --white: #fff;
+    --red: #aa0505;
+    --gray: #959595;
+    --blue: #56c5db;
+    --purple: #A020F0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, button, input, textarea {
+    font: 400 16px "Roboto", sans-serif;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+
+
+
+/* Main */
+.main-section {
+    padding: 40px 0 64px;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px
+  }
+
+  .section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .normal-section{
+    margin-top: 80px;
+  }
+
+  .products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .bebida-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bebida-title{
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+.bebida-image{
+    width: 240px;
+    height: 144px;
+}
+
+.bebida-price-container{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product-price{
+   margin-right: 12px;
+   font-family: sans-serif; 
+   font-weight: bold;
+}
+
+.button-houver-background{
+ background-color: var(--purple);
+ padding: 4px 2px;
+ font-weight: bold;
+ border-radius: 6px;
+ color: var(--white);
+}
+
+/* Header da Tabela */
+
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-head-iten{
+    text-align: start;
+    border-bottom: 1px solid #959595;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.second-col{
+    padding-right: 10px;
+}
+
+.second-col,
+.third-col{
+    width: 26%;
+}
+
+/* Body da Tabela*/
+
+.cart-product td{
+  padding: 8px 0px;
+}
+
+.product-identificantion{
+  display: flex;
+  align-items: center;
+}
+
+.cart-product-image{
+  width: 120px;
+  height: 70px;
+}
+
+.cart-product-title{
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+.cart-product-price{
+  font-family: sans-serif;
+}
+
+.product-qtd-input{
+  width: 48px;
+  width: 34px;
+  border-radius: 6px;
+  border: 2px solid var(--blue);
+  text-align: center;
+  background-color: var(--white);
+}
+
+.remove-product-buttom{
+  margin-left: 12px;
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 10px 8px;
+  border: 0;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.remove-product-buttom:hover{
+  filter:brightness(0.8)
+}
+
+/* Footer da Tabela */
+
+.cart-total-container{
+  border-top: 1px solid #959595;
+  text-align: end;
+  padding: 6px 16px 0 0;
+  font-size: 18px;
+}
+
+.cart-total-container strong{
+  margin-right: 12px;
+}
+
+.purchase-buttom{
+  display: flex;
+  margin: 24px auto 0;
+  background-color: #56c5db;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 16px 26px;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: bold;
+
+  transition:0.2s;
+}
+
+.purchase-buttom:hover{
+  filter:brightness(0.8)
+}
